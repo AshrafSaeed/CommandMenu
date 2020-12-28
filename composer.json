@@ -1,0 +1,36 @@
+{
+    "name": "ashrafsaeed/command-menu",
+    "description": "Command menu for console command",
+    "keywords": ["console", "command-line", "command", "commands", "laravel-commands", "php", "cli", "laravel", "artisan", "symfony"],
+    "type": "library",  
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.2.5|^8.0",
+        "illuminate/console": "^6.0|^7.0|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "php-school/cli-menu": "^4.1"
+    },
+    "require-dev": {
+        "php-school/cli-menu": "^4.1"
+    },
+    "license": "MTI", 
+    "authors": [
+        {
+            "name": "Muhammaf Ashraf",
+            "email": "avanix.sol@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AshrafSaeed\\CommandMenu\\": "src/" 
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AshrafSaeed\\CommandMenu\\ServiceProvider\\CommandMenuServiceProvider"
+            ]
+        }
+    }
+}
